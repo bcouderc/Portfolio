@@ -1,0 +1,69 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap');
+@import "var";
+
+body{
+    margin: 0;
+    background-color: $c_background;
+}
+
+h1{
+    font-family: $p_titre;
+    font-size: 40px;
+    color: $c_titre1;
+}
+h2{
+    font-family: $p_titre;
+    color: $c_titre2;
+}
+
+li{
+    font-family: $p_texte;
+    color: $c_normal;
+    list-style-type: none;
+}
+
+p{
+    font-family: $p_texte;
+    color: $c_normal;
+}
+
+// mise en page
+
+.contenaire{
+    @include dir_row();
+    gap: 50px;
+}
+
+.hidden{
+    display: none;
+}
+
+.form{
+    &Contact{
+        @include dir_col();
+        width: 600px;
+        font-family: $p_texte;
+        color: $c_normal;
+    }
+}
+
+section{
+    width: 700px;
+    // border: solid 1px white;
+}
+
+.img{
+    &APropos{
+        @include dir_row();
+        gap: 20px;
+    }
+    &Profil{
+        width: 200px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px $c_moonstone;
+    }
+    &Align{
+        @include align_centerHV();
+    }
+}

@@ -1,0 +1,74 @@
+
+// couleurs
+
+$c_background : #042a2b;
+$c_moonstone : #005F73;
+$c_normal : #8ECAE6;
+$c_titre1 : #EE9403;
+$c_titre2 : #E5BF01;
+
+// polices
+$p_titre : "Zen Dots", sans-serif;
+$p_texte : "Fira Code", monospace;
+
+// media queries
+$desktop:1100px;
+
+
+// Alignements
+// Mixin
+@mixin dir_row{
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin dir_col{
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin align_centerHV{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// .zen-dots-regular {
+//     font-family: "Zen Dots", sans-serif;
+//     font-weight: 400;
+//     font-style: normal;
+//   }
+  
+// <weight>: Use a value from 300 to 700
+
+// .fira-code-normal {
+//     font-family: "Fira Code", monospace;
+//     font-optical-sizing: auto;
+//     font-weight: 300;
+//     font-style: normal;
+// }
+
+// .space-mono-regular {
+//     font-family: "Space Mono", monospace;
+//     font-weight: 400;
+//     font-style: normal;
+// }
+  
+// .space-mono-bold {
+//     font-family: "Space Mono", monospace;
+//     font-weight: 700;
+//     font-style: normal;
+// }
+  
+// .space-mono-regular-italic {
+//     font-family: "Space Mono", monospace;
+//     font-weight: 400;
+//     font-style: italic;
+// }
+  
+// .space-mono-bold-italic {
+//     font-family: "Space Mono", monospace;
+//     font-weight: 700;
+//     font-style: italic;
+// }
+  

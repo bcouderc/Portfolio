@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap");
+body {
+  margin: 0;
+  background-color: #042a2b;
+}
+
+h1 {
+  font-family: "Zen Dots", sans-serif;
+  font-size: 40px;
+  color: #EE9403;
+}
+
+h2 {
+  font-family: "Zen Dots", sans-serif;
+  color: #E5BF01;
+}
+
+li {
+  font-family: "Fira Code", monospace;
+  color: #8ECAE6;
+  list-style-type: none;
+}
+
+p {
+  font-family: "Fira Code", monospace;
+  color: #8ECAE6;
+}
+
+.contenaire {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.hidden {
+  display: none;
+}
+
+.formContact {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  font-family: "Fira Code", monospace;
+  color: #8ECAE6;
+}
+
+section {
+  width: 700px;
+}
+
+.imgAPropos {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.imgProfil {
+  width: 200px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #005F73;
+}
+.imgAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

@@ -4,8 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Béatrice COUDERC</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <main>
+        <div class="contenaire">
+            <div>
+                <div>
+                    <h1>Béatrice COUDERC</h1>
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li onclick="afficherSection('aPropos')">A propos de moi</li>
+                            <li onclick="afficherSection('experiences')">Mes expériences</li>
+                            <li onclick="afficherSection('projets')">Mes projets</li>
+                            <li onclick="afficherSection('contact')">Me contacter</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div>
+                <section id="aPropos">
+                    <div>
+                        <h2>A propos de moi</h2>
+                        <div class="imgAPropos">  
+                            <div class="imgAlign">
+                                <img src="./assets/photo/001.jpg" alt="photo de moi petite" class="imgProfil">
+                            </div>
+                            <div>                    
+                                <p>En 2023 j'ai décidé de changer de vie professionnel et de sauter le pas pour devenir intégrateur Web. 
+                                    J'ai suivi une formation de plusieurs mois avec OpenClassrooms afin d'acquérir les bases du métier.
+                                    Aujourd'hui je suis freelance et je viens de créer mon entreprise, la : CelticWebCraft, une entreprise 
+                                    de création de site web.
+                                <br>
+                                <br>
+                                Mon objectif n'est pas de vous en mettre plein les yeux, je n'aurais pas cette prétention et de plus je débute.
+                                <br>
+                                <br>
+                                Je vous invite donc à parcourir ce Portfolio. Si vous trouvez mon travail intéressant et que vous avez un projet, 
+                                je vous invite à me contacter via le formulaire en bas de cette page pour en discuter.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            
+                <section id="experiences" class="hidden">
+                    <div>
+                        <h2>Mes expériences</h2>
+                    </div>
+                </section>
+
+                <section id="projets" class="hidden">
+                    <div>
+                        <h2>Mes projets</h2>
+                    </div>
+                </section>
+
+                <section id="contact" class="hidden">
+                    <div>
+                        <h2>Me contacter</h2>
+                        <p>Vous avez un projet ? Discutons-en !</p>
+                        <form action="#" method="post" class="formContact">
+                            <label for="name">Nom*</label>
+                            <input type="text" name="name" id="name">
+
+                            <label for="firstName">Prénom</label>
+                            <input type="text" name="firstName" id="firstName">
+
+                            <label for="email">Email*</label>
+                            <input type="email" name="email" id="email">
+
+                            <label for="phone">Téléphone</label>
+                            <input type="phone" name="phone" id="phone">
+
+                            <label for="object">Objet</label>
+                            <input type="object" name="object" id="object">
+
+                            <label for="message">Message*</label>
+                            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                            <input type="submit" value="Envoyer">
+
+                            <p>* : Champs obligatoires</p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div> 
+    </main>
+
 </body>
 </html>
