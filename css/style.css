@@ -1,18 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap");
 body {
-  margin: 0;
-  background-color: #042a2b;
+  margin: auto;
+  background-color: #133133;
+  max-width: 1440px;
 }
 
 h1 {
   font-family: "Zen Dots", sans-serif;
   font-size: 40px;
-  color: #EE9403;
+  color: #EBB42C;
 }
 
 h2 {
   font-family: "Zen Dots", sans-serif;
-  color: #E5BF01;
+  color: #816c01;
 }
 
 li {
@@ -29,7 +30,8 @@ p {
 .contenaire {
   display: flex;
   flex-direction: row;
-  gap: 50px;
+  gap: 60px;
+  justify-content: center;
 }
 
 .hidden {
@@ -59,7 +61,6 @@ section {
   box-shadow: 5px 5px 10px #005F73;
 }
 .imgAlign {
-  display: flex;
   align-items: center;
   justify-content: center;
 }/*# sourceMappingURL=style.css.map */

@@ -3,16 +3,17 @@
 
 $c_background : #133133;
 $c_moonstone : #005F73;
-$c_normal : #8ECAE6;
-$c_titre1 : #EE9403;
-$c_titre2 : #E5BF01;
+$c_normal : #8ECAE6; // texte
+$c_titre1 : #EBB42C; // CelticWebCraft et Boostez ...
+$c_titre2 : #816c01; // A propos
+$c_barreVDE : #09756C; // barre secondaire
 
 // polices
 $p_titre : "Zen Dots", sans-serif;
 $p_texte : "Fira Code", monospace;
 
 // media queries
-$desktop:1100px;
+$desktop:1440px;
 
 
 // Alignements
@@ -28,7 +29,6 @@ $desktop:1100px;
 }
 
 @mixin align_centerHV{
-    display: flex;
     align-items: center;
     justify-content: center;
 }
