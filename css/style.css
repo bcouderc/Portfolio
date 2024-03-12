@@ -18,8 +18,12 @@ h2, h3, h4 {
 
 li {
   font-family: "Fira Code", monospace;
-  color: #8ECAE6;
+  color: #EBB42C;
   list-style-type: none;
+  float: left;
+  width: auto;
+  cursor: pointer;
+  padding-left: 50px;
 }
 
 p {
@@ -32,6 +36,19 @@ p {
   flex-direction: row;
   gap: 60px;
   justify-content: center;
+}
+
+.cwc_contenaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+}
+.cwc_nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 30px;
 }
 
 .hidden {
@@ -47,7 +64,7 @@ p {
 }
 
 section {
-  width: 700px;
+  width: 1000px;
 }
 
 .imgAPropos {
@@ -56,11 +73,15 @@ section {
   gap: 20px;
 }
 .imgProfil {
-  width: 200px;
+  width: 400px;
   border-radius: 15px;
   box-shadow: 5px 5px 10px #005F73;
 }
 .imgAlign {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+}
+.imgLogo {
+  width: 380px;
 }/*# sourceMappingURL=style.css.map */

@@ -3,69 +3,95 @@
 @import "var";
 
 body{
-    margin: auto;
-    background-color: $c_background;
-    max-width: $desktop;
+ 		margin: auto;
+ 		background-color: $c_background;
+ 		max-width: $desktop;
 }
 
 h1{
-    font-family: $p_titre;
-    font-size: 40px;
-    color: $c_titre1;
+ 		font-family: $p_titre;
+ 		font-size: 40px;
+ 		color: $c_titre1;
 }
+
 h2, h3, h4{
-    font-family: $p_titre;
-    color: $c_titre2;
+ 		font-family: $p_titre;
+ 		color: $c_titre2;
 }
 
 li{
-    font-family: $p_texte;
-    color: $c_normal;
-    list-style-type: none;
+ 		font-family: $p_texte;
+ 		color: $c_titre1;
+ 		list-style-type: none;
+		float: left;
+		width: auto;
+		cursor: pointer;
+		padding-left: 50px;
 }
 
 p{
-    font-family: $p_texte;
-    color: $c_normal;
+ 		font-family: $p_texte;
+ 		color: $c_normal;
 }
 
 // mise en page
 
 .contenaire{
-    @include dir_row();
-    gap: 60px;
-    justify-content: center;
+ 		@include dir_row();
+ 		gap: 60px;
+ 		justify-content: center;
 }
 
+// Header
+.cwc{
+		&_contenaire{
+			@include dir_row();
+			justify-content: space-between;
+			margin: 20px;
+		}
+	&_nav{
+			@include dir_row();
+			justify-content: flex-end;
+			gap: 30px;
+		}
+}
+
+
 .hidden{
-    display: none;
+ 	display: none;
 }
 
 .form{
-    &Contact{
-        @include dir_col();
-        width: 600px;
-        font-family: $p_texte;
-        color: $c_normal;
-    }
+		&Contact{
+			@include dir_col();
+			width: 600px;
+			font-family: $p_texte;
+			color: $c_normal;
+		}
 }
 
 section{
-    width: 700px;
-    // border: solid 1px white;
+		width: 1000px;
+		// border: solid 1px white;
 }
 
 .img{
-    &APropos{
-        @include dir_row();
-        gap: 20px;
-    }
-    &Profil{
-        width: 200px;
-        border-radius: 15px;
-        box-shadow: 5px 5px 10px $c_moonstone;
-    }
-    &Align{
-        @include align_centerHV();
-    }
+		&APropos{
+				@include dir_row();
+				gap: 20px;
+		}
+		&Profil{
+				width: 400px;
+				border-radius: 15px;
+				box-shadow: 5px 5px 10px $c_moonstone;
+		}
+		&Align{
+				@include dir_col();
+				align-items: center;
+				
+		}
+		&Logo{
+				width: 380px;
+		}
 }
+
