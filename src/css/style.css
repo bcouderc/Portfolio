@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap");
-
 body {
   margin: auto;
   background-color: #133133;
@@ -33,9 +32,9 @@ p {
 }
 
 a {
-  font-family: "Fira Code", monospace;
-  color: #8ECAE6;
   text-decoration: none;
+  font-family: "Fira Code", monospace;
+  color: #EBB42C;
 }
 
 .contenaire {
@@ -91,4 +90,4 @@ section {
 }
 .imgLogo {
   width: 380px;
-}/*# sourceMappingURL=style.css.map */
+}
