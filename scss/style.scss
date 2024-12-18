@@ -2,24 +2,24 @@
 
 body{
 	margin: auto;
-	background-color: $c_background;
+	background-color: map-get($colors, "background");
 	max-width: $desktop;
 }
 
 h1{
 	font-family: $p_titre;
 	font-size: 40px;
-	color: $c_titre1;
+	color: map-get($colors,"titre1");
 }
 
 h2, h3, h4{
 	font-family: $p_titre;
-	color: $c_titre2;
+	color: map-get($colors,"titre2");
 }
 
 li{
 	font-family: $p_texte;
-	color: $c_titre1;
+	color: map-get($colors, "titre1");
 	list-style-type: none;
 	float: left;
 	width: auto;
@@ -29,13 +29,13 @@ li{
 
 p{
 	font-family: $p_texte;
-	color: $c_normal;
+	color: map-get($colors,"normal");
 }
 
 a {
 	text-decoration: none;
 	font-family: $p_texte;
-	color: $c_titre1;
+	color: map-get($colors,"titre1");
 }
 
 // mise en page
@@ -70,7 +70,7 @@ a {
 		@include dir_col();
 		width: 600px;
 		font-family: $p_texte;
-		color: $c_normal;
+		color: map-get($colors, "normal");
 	}
 }
 
@@ -87,7 +87,7 @@ section{
 	&Profil{
 		width: 400px;
 		border-radius: 15px;
-		box-shadow: 5px 5px 10px $c_moonstone;
+		box-shadow: 5px 5px 10px map-get($colors,"moonstone");
 	}
 	&Align{
 		@include dir_col();

@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&display=swap');
 // couleurs
 
-$c_background : #133133;
-$c_moonstone : #005F73;
-$c_normal : #8ECAE6; // texte
-$c_titre1 : #EBB42C; // CelticWebCraft et Boostez ...
-$c_titre2 : #816c01; // A propos
-$c_barreVDE : #09756C; // barre secondaire
+$colors: (
+    "background" : #133133,
+    "moonstone" : #005F73,
+    "normal" : #8ECAE6, //texte
+    "titre1" : #EBB42C, //celticwebcraft & booster ...
+    "titre2" : #816C01, //A propos ...
+    "barreVDE" : #09756C, //barre secondaire
+);
+
+//$c_background : #133133;
+//$c_moonstone : #005F73;
+//$c_normal : #8ECAE6; // texte
+//$c_titre1 : #EBB42C; // CelticWebCraft et Boostez ...
+//$c_titre2 : #816c01; // A propos
+//$c_barreVDE : #09756C; // barre secondaire
 
 // polices
 $p_titre : "Zen Dots", sans-serif;
