@@ -1,157 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio Béatrice COUDERC</title>
-
-	<link rel="stylesheet" href="./css/style.css">
-	<script src="https://kit.fontawesome.com/7be78ce38e.js" crossorigin="anonymous"></script>
-	<script src="script.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venez découvrir le travail de Béatrice COUDERC en matière de développement web, site vitrine"></meta>
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio de Béatrice COUDERC - Developpeuse Front-end Junior</title>
 </head>
 <body>
-	<header>
-		<div class="cwc_contenaire">
-			<div>
-				<img src="./assets/photo/logo/CelticWebCraft - Logo.png" alt="Logo CelticWebCraft" class="imgLogo">
-			</div>
-			<div class="cwc_nav">
-				<nav>
-					<ul>
-						<li onclick="afficherSection('aPropos')">A propos de moi</li>
-						<li onclick="afficherSection('experiences')">Mes expériences</li>
-						<li onclick="afficherSection('projets')">Mes projets</li>
-						<li onclick="afficherSection('contact')">Me contacter</li>
-					</ul>
-				</nav>
-			</div>
-		</div>                
-	</header>
-	<main>
-		<div class="contenaire">
-			<div>
-				<section id="aPropos">
-					<div>
-						<h2>A propos de moi</h2>
-						<div class="imgAPropos">  
-							<div class="imgAlign">
-								<p>Bonjour, mon nom est : Béatrice COUDERC</p>
-								<img src="./assets/photo/001.jpg" alt="photo de moi petite" class="imgProfil">
-							</div>
-							<div> 
-									<p>Que dire à propos de moi ??
-									<br> <br>
-									Eh bien... En 2023 j'ai décidé de changer de vie professionnel et de me lancer dans une formation afin d'acquérir les connaissances 
-									nécessaire pour devenir intégrateur Web. 
-									J'ai suivi une formation de plusieurs mois avec OpenClassrooms afin d'acquérir les bases du métier.
-									Aujourd'hui je suis freelance et je viens de créer mon entreprise, la : <br><br><strong>- CelticWebCraft</strong><br><br>
-									Elle est basée à Guingamp dans les Côtes-d'armor (ouuuu... mais c'est loin ça !!), mais le monde est petit et il n'y a que les montagnes ne se rencontrent pas.
-								<br>
-								<br>
-								Mon objectif n'est pas de vous en mettre plein les yeux, je n'aurais pas cette prétention et de plus je débute.
-								<br>
-								<br>
-								Je vous invite donc à parcourir ce Portfolio. Si vous trouvez mon travail intéressant et que vous avez un projet, 
-								je vous invite à me contacter pour en discuter.
-								<br><br>Cliquez sur "Me contacter" et laissez-moi vos coordonnées. Je me ferai un plaisir de vous rappeler.
-								</p>
-								<a href="https://cvdesignr.com/p/bcouderc-integrateur-web-jr?hl=fr_FR">
-									<p>Mon CV...</p>
-								</a>
-							</div>
-						</div>
-					</div>
-				</section>
+    <main id="mainPage">
+        <header id="mainHeader">
+            <img src="/images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="#">Accueil</a></li>
+                        <li><a href="#">Expériences</a></li>
+                        <li><a href="#">Projets</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </img>
+        </header>
 
-				<section id="experiences" class="hidden">
-					<div>
-						<h2>Mes expériences</h2>
-					</div>
-				</section>
-
-				<section id="projets" class="hidden">
-					<div>
-						<h2>Mes projets</h2>
-
-						<div>
-							<h3>Booki-starter-code</h3>
-							<h4>Le scénario</h4>
-							<p>L’entreprise souhaite développer un site Internet qui permette aux usagers de trouver des hébergements et des activités dans la ville de leur choix.
-								Vous êtes chargé d'intégrer l'interface du site avec du code HTML et CSS. </P>
-							</p>
-							<p>                           
-								<a href="https://bcouderc.github.io/booki-starter-code/">
-									<p>Lien vers : Booki-starter-code</p>
-								</a>
-								<br><br>
-								<img src="./assets/photo/booki-starter-code/capture-booki-starter-code.png" alt="">
-							</p>
-
-						</div>
-
-						<div>
-							<h3>Ohmyfood - Le scénario</h3>
-							<p>
-								Il s’agit d’une jeune startup qui voudrait s'imposer sur le marché de la restauration. Déjà présente à New-York, elle souhaite désormais faire sa place à Paris.
-								<br><br>Votre mission est de développer un site “mobile first” qui répertorie les menus de restaurants gastronomiques.
-								En plus des systèmes classiques de réservation, les clients pourront composer le menu de leur repas pour que les plats soient prêts à leur arrivée. Finis, les temps d'attente au restaurant !
-							</p>
-							<p>                           
-								<a href="https://bcouderc.github.io/Ohmyfood/">
-									<p>Lien vers : Ohmyfood</p>
-								</a>
-								<br><br>
-								<img src="./assets/photo/ohmyfood/capture - Ohmyfood.png" alt="">
-							</p>
-
-						</div>
-					</div>
-				</section>
-
-				<section id="contact" class="hidden">
-					<div>
-						<h2>Me contacter</h2>
-						<p>Vous avez un projet ? Discutons-en !</p>
-						<form action="#" method="post" class="formContact">
-							<label for="name">Nom*</label>
-							<input type="text" name="name" id="name">
-
-							<label for="firstName">Prénom</label>
-							<input type="text" name="firstName" id="firstName">
-
-							<label for="email">Email*</label>
-							<input type="email" name="email" id="email">
-
-							<label for="phone">Téléphone</label>
-							<input type="phone" name="phone" id="phone">
-
-							<label for="object">Objet</label>
-							<input type="object" name="object" id="object">
-
-							<label for="message">Message*</label>
-							<textarea name="message" id="message" cols="30" rows="10"></textarea>
-							<input type="submit" value="Envoyer">
-
-							<p>* : Champs obligatoires</p>
-							<div>
-								<label></label>
-								<input type="checkbox">
-								<p>En soumettant ce formulaire, j'accepte que mes données personnelles soient utilisées
-									pour me recontacter. Aucun autre traitement ne sera effectué avec mes informations.
-								<br><br>
-								<!-- Pour connaitre et exercer vos droits, vous pouvez consulter la <strong>Politique de confidentialité</strong>. -->
-								</p>
-							</div>
-						</form>
-					</div>
-				</section>
-			</div>
-		</div> 
-	</main>
-
-	<footer>
-	
-	</footer>
-
+        <section id="pageBarre">
+            <main id="imgPortrait">
+                <div>
+                    <h1>Technicienne informatique polyvalente</h1>
+                </div>
+                <div>
+                    <img src="/images/portrait/StylizePhoto_4_20240519.jpeg" alt="dessin portrait de l'auteur de cette page">
+                </div>
+                <div>
+                    <h1>Développeuse Front-end Junior</h1>
+                </div>
+            </main>
+        </section>
+    </main>
 </body>
-</html>.
+</html>
