@@ -5,6 +5,7 @@
   --or: #EBB42C;
   --shadowW: rgba(255, 255, 255, 0.15);
   --white: #FFF;
+  --grise:#a7a7a7;
   box-sizing: border-box;
 }
 
@@ -13,8 +14,32 @@
 }
 
 body {
+  margin: auto;
+  max-width: 1440px;
   font-size: 1rem;
   font-family: "Space mono", monospace, Verdana, san-serif;
+  background-image: url("/images/background/fondBinaire-2.svg");
+  background-repeat: repeat;
+}
+
+p {
+  color: var(--grise);
+}
+
+#mainHeader {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+#mainHeader #mainNav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+#mainNav li {
+  display: inline-block;
+  margin-left: 20px;
 }
 
 #imgPortrait {
@@ -72,4 +97,24 @@ body {
   margin: 0;
   display: flex;
   flex-flow: column nowrap;
+}
+
+#pageContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 30px 0 30px;
+  text-align: center;
+}
+#pageContent h1, #pageContent h2 {
+  color: var(--or);
+}
+#pageContent section {
+  flex: 3;
+}
+#pageContent section p {
+  text-align: justify;
+}
+#pageContent aside {
+  flex: 4;
 }/*# sourceMappingURL=style.css.map */
