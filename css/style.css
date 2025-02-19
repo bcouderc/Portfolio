@@ -20,9 +20,10 @@ body {
   max-width: 1440px;
   font-size: 1rem;
   font-family: "Space Mono", monospace, Verdana, sans-serif;
-  background-image: url("../images/background/fondBinaire-2.svg");
+  background-image: url("../css/images/background/fondBinaire-2.svg");
   background-size: 100%;
   background-repeat: no-repeat;
+  opacity: 60%;
 }
 
 p {
