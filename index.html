@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <meta name="description" content="Venez découvrir le travail de Béatrice COUDERC en matière de développement web, site vitrine"></meta>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Portfolio de Béatrice COUDERC - Developpeuse Front-end Junior - Acceuil</title>
 </head>
 <body>
-    <section id="mainPage">
-        <header id="mainHeader">
-            <img src="/images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
-                <nav id="mainNav">
-                    <ul>
-                        <li><a href="#">Accueil</a></li>
-                        <li><a href="/experiences.html">Expériences</a></li>
-                        <li><a href="#">Projets</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </img>
-        </header>
+    <header id="mainHeader">
+        <img src="/images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="#">Projets</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </img>
+    </header>
 
-        <section id="pageBarre">
-            <main id="imgPortrait">
-                <div>
-                    <h1>Technicienne informatique polyvalente</h1>
-                </div>
-                <figure>
-                    <img src="/images/portrait/StylizePhoto_4_20240519-v2.jpeg" alt="dessin portrait de l'auteur de cette page">
-                </figure>
-                <div>
-                    <h1>Développeuse Front-end Junior</h1>
-                </div>
-            </main>
-        </section>
-        <main id="pageContent">
-            <section>
-                <h1>A propos</h1>
-                <p>
-                    Bienvenue sur ma page de présentation !
-                    <br>Après 17 ans d'une carrière militaire, où j'ai occupé divers postes, dont celui de technicien de maintenance informatique, j’ai pris un virage vers l’assistanat de direction.
-                    <br><br>Cependant, en 2023, j’ai décidé de tout changer et de me lancer dans la programmation web. J’ai suivi une formation intensive avec OpenClassrooms, où j’ai acquis les bases solides pour devenir intégrateur Web. Aujourd'hui, je suis freelance et créateur de CelticWebCraft, une entreprise basée à Guingamp, dans les Côtes-d'Armor. Certes, c'est un peu loin pour certains, mais le monde est petit, n’est-ce pas ? 😄
-                    <br><br>Mon objectif n’est pas de vous impressionner, mais de vous partager ma passion et mes premiers projets. J’ai encore beaucoup à apprendre, mais si mon travail vous plaît et que vous avez un projet de site vitrine à discuter, je serai ravi de vous accompagner.
-                    <br><br>Cliquez sur "Me contacter" et laissez-moi vos coordonnées. Je me ferai un plaisir de vous rappeler !
-                </p>
-            </section>
-            <aside>
-                <h1>Softs Skills</h1>
-                <span><h2>military</h2></span>
-                <span><h2>Assistante de direction</h2></span>
-                <span><h2>Reconversion</h2></span>
-                <span><h2>Support IT</h2></span>
-            </aside>
-        </main>
+    <section id="pageBarre">
+        <div id="imgPortrait">
+            <div>
+                <h1>Technicienne informatique polyvalente</h1>
+            </div>
+            <figure>
+                <img src="images/portrait/StylizePhoto_4_20240519-v2.jpeg" alt="dessin portrait de l'auteur de cette page">
+            </figure>
+            <div>
+                <h1>Développeuse Front-end Junior</h1>
+            </div>
+        </div>
     </section>
+    <main id="pageContent">
+        <section>
+            <h1>A propos</h1>
+            <p>
+                Bienvenue sur ma page de présentation !
+                <br><br>Après 17 ans d'une carrière militaire, où j'ai occupé divers postes, dont celui de technicien de maintenance informatique, j’ai pris un virage vers l’assistanat de direction.
+                <br><br>Cependant, en 2023, j’ai décidé de tout changer et de me lancer dans la programmation web. J’ai suivi une formation intensive avec OpenClassrooms, où j’ai acquis les bases solides pour devenir intégrateur Web. Aujourd'hui, je suis freelance et créateur de CelticWebCraft, une entreprise basée à Guingamp, dans les Côtes-d'Armor. Certes, c'est un peu loin pour certains, mais le monde est petit, n’est-ce pas ? 😄
+                <br><br>Mon objectif n’est pas de vous impressionner, mais de vous partager ma passion et mes premiers projets. J’ai encore beaucoup à apprendre, mais si mon travail vous plaît et que vous avez un projet de site vitrine à discuter, je serai ravi de vous accompagner.
+                <br><br>Cliquez sur "Me contacter" et laissez-moi vos coordonnées. Je me ferai un plaisir de vous rappeler !
+            </p>
+        </section>
+        <aside>
+            <div>
+                <h1>Soft Skills</h1>
+            </div>
+            <div id="mainSkills">
+                <span>
+                    <img src="images/logos/skills/css-brands-solid.svg" id="css" alt="CSS">
+                    <h2>CSS</h2>
+                </span>
+                <span>
+                    <img src="images/logos/skills/github-brands-solid.svg" id="gitHub" alt="GitHub">
+                    <h2>GitHub</h2>
+                </span>
+                <span>
+                    <img src="images/logos/skills/html5-brands-solid.svg" id="html" alt="HTML">
+                    <h2>HTML</h2>
+                </span>
+                <span>
+                    <img src="images/logos/skills/js-brands-solid.svg" id="js" alt="JavaScript">
+                    <h2>JavaScript</h2>
+                </span>
+                <span>
+                    <img src="images/logos/skills/react-brands-solid.svg" id="react" alt="React">
+                    <h2>React</h2>
+                </span>
+                <span>
+                    <img src="images/logos/skills/sass-brands-solid.svg" id="sass" alt="SASS">
+                    <h2>Sass</h2>
+                </span>
+            </div>
+
+        </aside>
+    </main>
+    <footer>
+        &copy; CelticWebCraft. Tous droits réservés.
+    </footer>
 </body>
 </html>

@@ -7,7 +7,9 @@
     --or: #EBB42C;
     --shadowW : rgba(255, 255, 255, 0.15);
     --white: #FFF;
-    --grise:#a7a7a7;
+    --grise:#c5c5c5;
+    --cssColor:#7800af;
+    --html:#a80000;
 
     box-sizing: border-box;
 }
@@ -17,12 +19,13 @@
 }
 
 body {
-    margin: auto; // permet de centrer l'image horizontalement
+    margin: 20px auto; // permet de centrer l'image horizontalement
     max-width: 1440px;
     font-size: 1rem;
-    font-family: 'Space mono', monospace, Verdana, san-serif;
-    background-image: url("/images/background/fondBinaire-2.svg");
-    background-repeat: repeat;
+    font-family: "Space Mono", monospace, Verdana, sans-serif;
+    background-image: url("images/background/fondBinaire-2.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 p{
     color: var(--grise);
@@ -39,7 +42,32 @@ p{
 }
 #mainNav li{
     display: inline-block;
-    margin-left: 20px;
+}
+#mainSkills{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 5px;
+    & img {
+        height: 100px;
+    }
+    & span{
+        background-color: var(--shadowW);
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        height: 10em;
+    }
+    & #cssLogo{
+        color: var(--cssColor);
+    }
+}
+
+#mainNav a{
+    color: var(--or);
+    text-decoration: none;
+    padding-right: 10px;
+    gap: 50px;
 }
 #imgPortrait {
     display: grid; // Active Flexbox
@@ -74,7 +102,7 @@ p{
         border-radius: 50%; //créé un arrondi
         object-fit: cover; // fait en sorte que l'image ne sorte pas du cadre
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); // créé une légère ombre portée
-        position: absolute;        
+        position: absolute;
         //transform: translateY(-2%);
     }
 }
@@ -87,15 +115,13 @@ p{
 #mainPage{
     width: 1366px;
     height: 1009px;
-    border-radius: 20px;
-    background-color: var(--blackGreen);
 
     ul{
-        list-style: none;
+        list-style: none; 
         padding: 0;
         margin: 0;
-        display: flex;
-        flex-flow: column nowrap;
+        gap: 20px;
+        //display: flex;
     }
 }
 #pageContent{
@@ -116,4 +142,28 @@ p{
     & aside{
         flex: 4;
     }
+}
+
+// page expériences professionnelles
+#mainExperiences{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    & img {
+        height: 100px;
+        border-radius: 50%;
+    }
+    & div{
+        background-color: var(--shadowW);
+        margin: 10px;
+        border-radius: 10px;
+        padding: 10px;
+        height: 50em;
+    }
+}
+.centerImg{
+    display: flex;
+    justify-content: center;
 }
