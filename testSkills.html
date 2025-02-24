@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compétences</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-bottom: 10px;
+        }
+        .card p {
+            font-size: 0.9em;
+            color: #555;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: opacity 0.3s, transform 0.3s;
+        }
+        .card:hover p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header id="mainHeader">
+        <img src="images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="experiences.html">Expériences</a></li>
+                    <li><a href="testSkills.html">Projets</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </img>
+    </header>
+    <div class="grid">
+        <div class="card">
+            <h3>HTML 📝</h3>
+            <p>Écriture d'un code sémantique et accessible pour une meilleure expérience utilisateur et un bon SEO.</p>
+        </div>
+        <div class="card">
+            <h3>CSS 🎨</h3>
+            <p>Mise en page fluide et responsive, animations modernes et UI soignée pour un rendu impactant.</p>
+        </div>
+        <div class="card">
+            <h3>JavaScript ⚡</h3>
+            <p>Création d'expériences interactives et dynamiques avec une logique optimisée.</p>
+        </div>
+        <div class="card">
+            <h3>GitHub 🌍</h3>
+            <p>Gestion des versions de code, collaboration efficace et workflow optimisé.</p>
+        </div>
+        <div class="card">
+            <h3>Figma 🖌️</h3>
+            <p>Création de maquettes interactives et travail sur l'ergonomie des interfaces.</p>
+        </div>
+        <div class="card">
+            <h3>VS Code 💻</h3>
+            <p>Environnement de développement optimisé avec extensions et raccourcis.</p>
+        </div>
+        <div class="card">
+            <h3>SASS 🎭</h3>
+            <p>Préprocesseur CSS puissant pour une organisation efficace et un code plus maintenable.</p>
+        </div>
+        <div class="card">
+            <h3>React ⚛️</h3>
+            <p>Développement d'interfaces dynamiques et réactives avec une approche composantielle.</p>
+        </div>
+    </div>
+</body>
+</html>

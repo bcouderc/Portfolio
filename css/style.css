@@ -2,12 +2,14 @@
 :root {
   --black: #333;
   --blackGreen: #133133;
+  --darkBlue:#19354d;
   --or: #EBB42C;
   --shadowW: rgba(255, 255, 255, 0.15);
   --white: #FFF;
   --grise:#bbbbbb;
   --cssColor:#7800af;
   --html:#a80000;
+  --fond: rgba(4, 42, 43, 0.30);
   box-sizing: border-box;
 }
 
@@ -17,13 +19,19 @@
 
 body {
   margin: 20px auto;
-  max-width: 1440px;
+  max-width: 1800px;
   font-size: 1rem;
   font-family: "Space Mono", monospace, Verdana, sans-serif;
-  background-image: url("../css/images/background/fondBinaire-2.svg");
-  background-size: 100%;
-  background-repeat: no-repeat;
-  opacity: 60%;
+  background-color: var(--fond);
+  margin: auto;
+}
+
+#container {
+  background-color: var(--blackGreen);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 40px;
+  max-height: 100%;
 }
 
 p, li {
@@ -53,7 +61,6 @@ h1, h2, h3 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--blackGreen);
   border-radius: 10px;
   margin: 50px 0 0 0;
   padding: 20px;
@@ -86,8 +93,29 @@ h1, h2, h3 {
   background-color: var(--shadowW);
   margin: 10px;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
   padding: 10px;
   height: 10em;
+}
+#mainSkills span:hover {
+  transform: translateY(-5px);
+}
+#mainSkills span h2 {
+  margin-bottom: 10px;
+}
+#mainSkills span p {
+  font-size: 0.9em;
+  color: #555;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+#mainSkills span.card:hover p {
+  opacity: 1;
+  transform: translateY(0);
 }
 #mainSkills #cssLogo {
   color: var(--cssColor);
@@ -176,4 +204,12 @@ h1, h2, h3 {
 .centerImg {
   display: flex;
   justify-content: center;
+}
+
+#pdp {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  color: var(--or);
+  font-family: "Zen dots", monospace, Verdana, sans-serif;
 }/*# sourceMappingURL=style.css.map */

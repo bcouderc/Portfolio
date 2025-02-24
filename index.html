@@ -9,78 +9,91 @@
     <title>Portfolio de Béatrice COUDERC - Developpeuse Front-end Junior - Acceuil</title>
 </head>
 <body>
-    <header id="mainHeader">
-        <img src="images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
-            <nav id="mainNav">
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="experiences.html">Expériences</a></li>
-                    <li><a href="#">Projets</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
-        </img>
-    </header>
+    <div id="container">
+        <header id="mainHeader">
+            <img src="images/logos/logo_cwc.svg" alt="logo CelticWebCraft">
+                <nav id="mainNav">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="experiences.html">Expériences</a></li>
+                        <li><a href="testSkills.html">Projets</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </img>
+        </header>
 
-    <section id="pageBarre">
-        <div id="imgPortrait">
-            <div>
-                <h1>Technicienne informatique polyvalente</h1>
+        <section id="pageBarre">
+            <div id="imgPortrait">
+                <div>
+                    <h1>Technicienne informatique polyvalente</h1>
+                </div>
+                <figure>
+                    <img src="images/portrait/StylizePhoto_4_20240519-v2.jpeg" alt="dessin portrait de l'auteur de cette page">
+                </figure>
+                <div>
+                    <h1>Développeuse Front-end Junior</h1>
+                </div>
             </div>
-            <figure>
-                <img src="images/portrait/StylizePhoto_4_20240519-v2.jpeg" alt="dessin portrait de l'auteur de cette page">
-            </figure>
-            <div>
-                <h1>Développeuse Front-end Junior</h1>
-            </div>
-        </div>
-    </section>
-    <main id="pageContent">
-        <section>
-            <h1>Bienvenue !</h1>
-            <p>Béatrice COUDERC, je suis développeuse Front-end Junior freelance basé à Guingamp, dans les Côtes-d'Armor. Passionné par la création de sites vitrines sur mesure, j'accompagne les professionnels et les indépendants dans la mise en ligne de leur présence digitale.
-            <br><br>
-            Chaque projet est conçu avec soin, en tenant compte de vos besoins spécifiques, pour un site à la fois esthétique, fonctionnel et optimisé. Si vous souhaitez donner vie à votre projet web, je serais ravie d’en discuter avec vous.
-            <br><br>
-            En parallèle, j’offre également un service de dépannage informatique pour les particuliers les samedis et dimanches de 10h à 12h puis de 14h à 16h, dans un rayon de 50 km autour de Guingamp. Que ce soit pour une panne, une installation ou un problème de logiciel bureautique (suite office), je suis à votre disposition pour vous aider.
-            <br><br>
-            N’hésitez pas à me contacter pour en savoir plus ! 😊
-            </p>
         </section>
-        <aside id="softSkills">
-            <div>
-                <h1>Soft Skills</h1>
-            </div>
-            <div id="mainSkills">
-                <span>
-                    <img src="images/logos/skills/css-brands-solid.svg" id="css" alt="CSS">
-                    <h2>CSS</h2>
-                </span>
-                <span>
-                    <img src="images/logos/skills/github-brands-solid.svg" id="gitHub" alt="GitHub">
-                    <h2>GitHub</h2>
-                </span>
-                <span>
-                    <img src="images/logos/skills/html5-brands-solid.svg" id="html" alt="HTML">
-                    <h2>HTML</h2>
-                </span>
-                <span>
-                    <img src="images/logos/skills/js-brands-solid.svg" id="js" alt="JavaScript">
-                    <h2>JavaScript</h2>
-                </span>
-                <span>
-                    <img src="images/logos/skills/react-brands-solid.svg" id="react" alt="React">
-                    <h2>React</h2>
-                </span>
-                <span>
-                    <img src="images/logos/skills/sass-brands-solid.svg" id="sass" alt="SASS">
-                    <h2>Sass</h2>
-                </span>
-            </div>
-        </aside>
-    </main>
-    <footer>
-        &copy; CelticWebCraft. Tous droits réservés.
-    </footer>
+        <main id="pageContent">
+            <section>
+                <h1>Bienvenue !</h1>
+                <p>Je m'appel Béatrice COUDERC et je suis développeuse Front-end Junior freelance basé à Guingamp, dans les Côtes-d'Armor. Passionné par la création de sites vitrines sur mesure, j'accompagne les professionnels et les indépendants dans la mise en ligne de leur présence digitale.
+                <br><br>
+                Chaque projet est conçu avec soin, en tenant compte de vos besoins spécifiques, pour un site à la fois esthétique, fonctionnel et optimisé. Si vous souhaitez donner vie à votre projet web, je serais ravie d’en discuter avec vous.
+                <br><br>
+                En parallèle, j’offre également un service de dépannage informatique pour les particuliers les samedis et dimanches de 10h à 12h puis de 14h à 16h, dans un rayon de 50 km autour de Guingamp. Que ce soit pour une panne, une installation ou un problème de logiciel bureautique (suite office), je suis à votre disposition pour vous aider.
+                <br><br>
+                N’hésitez pas à me contacter pour en savoir plus ! 😊
+                </p>
+            </section>
+            <aside id="softSkills">
+                <div>
+                    <h1>Soft Skills</h1>
+                </div>
+                <div id="mainSkills">
+                    <span class="card">
+                        <img src="images/logos/skills/css-brands-solid.svg" id="css" alt="CSS">
+                        <h2>CSS</h2>
+                        <p>Mise en page fluide et responsive, animations modernes et UI soignée pour un rendu impactant.</p>
+                    </span>
+                    <span class="card">
+                        <img src="images/logos/skills/github-brands-solid.svg" id="gitHub" alt="GitHub">
+                        <h2>GitHub</h2>
+                        <p>Gestion des versions de code, collaboration efficace et workflow optimisé.</p>
+                    </span>
+                    <span class="card">
+                        <img src="images/logos/skills/html5-brands-solid.svg" id="html" alt="HTML">
+                        <h2>HTML</h2>
+                        <p>Écriture d'un code sémantique et accessible pour une meilleure expérience utilisateur et un bon SEO.</p>
+                    </span>
+                    <span class="card">
+                        <img src="images/logos/skills/js-brands-solid.svg" id="js" alt="JavaScript">
+                        <h2>JavaScript</h2>
+                        <p>Création d'expériences interactives et dynamiques avec une logique optimisée.</p>
+                    </span>
+                    <span class="card">
+                        <img src="#" id="figma" alt="Figma">
+                        <h2>Figma</h2>
+                        <p>Création de maquettes interactives et travail sur l'ergonomie des interfaces.</p>
+                    </span>
+                    <span class="card">
+                        <img src="images/logos/skills/sass-brands-solid.svg" id="sass" alt="SASS">
+                        <h2>Sass</h2>
+                        <p>Préprocesseur CSS puissant pour une organisation efficace et un code plus maintenable.</p>
+                    </span>
+                    <span class="card">
+                        <img src="#" id="vsCode" alt="vsCode">
+                        <h2>VSCode</h2>
+                        <p>Préprocesseur CSS puissant pour une organisation efficace et un code plus maintenable.</p>
+                    </span>
+                </div>
+            </aside>
+        </main>
+        <footer id="pdp">
+            &copy; CelticWebCraft 2025.
+        </footer>
+    </div>
 </body>
 </html>
