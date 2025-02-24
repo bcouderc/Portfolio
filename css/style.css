@@ -10,6 +10,10 @@
   --cssColor:#7800af;
   --html:#a80000;
   --fond: rgba(4, 42, 43, 0.30);
+  --logoCSS:#663399;
+  --logHTML:#E5532D;
+  --logoSASS:#CF6B9D;
+  --logoJS:#F0DC55;
   box-sizing: border-box;
 }
 
@@ -97,25 +101,41 @@ h1, h2, h3 {
   transition: transform 0.3s ease-in-out;
   position: relative;
   overflow: hidden;
-  padding: 10px;
+  padding: 5px;
   height: 10em;
 }
 #mainSkills span:hover {
-  transform: translateY(-5px);
+  transform: translateX(-5px);
 }
 #mainSkills span h2 {
-  margin-bottom: 10px;
+  margin: 10px;
 }
 #mainSkills span p {
   font-size: 0.9em;
-  color: #555;
+  color: var(--or);
   opacity: 0;
-  transform: translateY(10px);
+  transform: translateX(10px);
   transition: opacity 0.3s, transform 0.3s;
 }
 #mainSkills span.card:hover p {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
+}
+#mainSkills span svg {
+  height: 100px;
+  width: 100%;
+}
+#mainSkills span svg.logoHTML {
+  fill: var(--logHTML);
+}
+#mainSkills span svg.logoCSS {
+  fill: var(--logoCSS);
+}
+#mainSkills span svg.logoSASS {
+  fill: var(--logoSASS);
+}
+#mainSkills span svg.logoJS {
+  fill: var(--logoJS);
 }
 #mainSkills #cssLogo {
   color: var(--cssColor);
