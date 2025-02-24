@@ -90,6 +90,7 @@ h1, h2, h3{
     gap: 5px;
     & img {
         height: 100px;
+        width: 10px;
     }
     & span{
         background-color: var(--shadowW);
@@ -120,7 +121,7 @@ h1, h2, h3{
         }
         & svg {
             height: 100px;
-            width: 100%;
+            width: 100px;
             &.logoHTML{
                 fill: var(--logHTML);
             }

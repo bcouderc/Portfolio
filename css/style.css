@@ -92,6 +92,7 @@ h1, h2, h3 {
 }
 #mainSkills img {
   height: 100px;
+  width: 10px;
 }
 #mainSkills span {
   background-color: var(--shadowW);
@@ -123,7 +124,7 @@ h1, h2, h3 {
 }
 #mainSkills span svg {
   height: 100px;
-  width: 100%;
+  width: 100px;
 }
 #mainSkills span svg.logoHTML {
   fill: var(--logHTML);
