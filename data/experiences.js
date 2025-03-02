@@ -13,6 +13,7 @@
         ],
         "titreComp": "Compétences mise en oeuvre",
         "competences": [
+            "Utilisation d’un outil ITSM (OneClarilog)",
             "Diagnostic et résolution de problèmes informatiques",
             "Gestion des tickets d’incidents",
             "Installation et configuration de systèmes d’exploitation",
