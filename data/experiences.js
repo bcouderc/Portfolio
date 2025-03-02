@@ -20,6 +20,7 @@
             "Autonomie et sens de l’organisation"
         ]
     },
+
     {
         "id": "2",
         "date": "Février 2023 - Avril 2023",
@@ -37,6 +38,7 @@
             "Support utilisateur"
         ]
     },
+
     {
         "id": "3",
         "date": "Septembre 2022 - Novembre 2022",
@@ -53,6 +55,59 @@
             "Installation et configuration de logiciels métiers",
             "Dépannage matériel et logiciel",
             "Relation client et pédagogie"
+        ]
+    },
+
+    {
+        "id": "4",
+        "date": "Avril 2011 - Octobre 2021",
+        "poste": "Association Logement Jeunes Travailleurs, Paris - Assistante de Direction",
+        "missions": [
+            "Gestion et suivi administratif des dossiers et sinistres",
+            "Mise à jour et archivage de documents",
+            "Rédaction et mise en forme de documents"
+        ],
+        "titreComp": "Compétences mise en oeuvre",
+        "competences": [
+            "Gestion administrative et suivi de dossiers",
+            "Organisation et classement de documents",
+            "Maîtrise des outils bureautiques (Pack Office, Excel avancé)",
+            "Communication et coordination interne"
+        ]
+    },
+
+    {
+        "id": "5",
+        "date": "Mars 1999 - Avril 2011",
+        "poste": "Armée de Terre, Paris - Technicienne de Maintenance Informatique",
+        "missions": [
+            "Déploiement et configuration de postes sous Active Directory",
+            "Création et gestion des comptes utilisateurs",
+            "Support aux utilisateurs et gestion des tickets d’intervention"
+        ],
+        "titreComp": "Compétences mise en oeuvre",
+        "competences": [
+            "Administration Active Directory (création de comptes, intégration au domaine)",
+            "Déploiement de postes et gestion des images système",
+            "Support et assistance aux utilisateurs",
+            "Rédaction de documentation technique"
+        ]
+    },
+
+   {
+        "id": "6",
+        "date": "Septembre 1995 - Mars 1999",
+        "poste": "Armée de Terre, Paris - Opérateur de saisie",
+        "missions": [
+            "Saisie et mise à jour des fiches de renseignements des appelés du contingent",
+            "Extraction et contrôle des données via des requêtes SQL",
+            "Contrôle des données pour le versement de la paie"
+        ],
+        "titreComp": "Compétences mise en oeuvre",
+        "competences": [
+            "Saisie rapide et contrôle des données",
+            "Utilisation de bases de données SQL",
+            "Vérification et correction des erreurs"
         ]
     }
 ]
