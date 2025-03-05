@@ -1,0 +1,100 @@
+//Polices
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Zen+Dots&family=Zen+Kaku+Gothic+Antique&display=swap');
+:root {
+    --black: #333;
+    --blackGreen: #133133;
+    --darkBlue:#19354d;
+    --or: #EBB42C;
+    --shadowW : rgba(255, 255, 255, 0.15);
+    --white: #FFF;
+    --grise:#bbbbbb;
+    --cssColor:#7800af;
+    --html:#a80000;
+    --fond : #404040;
+
+    --degrad1:#202020;
+    --degrad2:#6D6D6D;
+
+    box-sizing: border-box;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    margin: 20px auto; // permet de centrer l'image horizontalement
+    max-width: 1800px;
+    font-size: 1rem;
+    font-family: "Zen Kaku Gothic Antique", sans-serif, Verdana, sans-serif;
+    margin: auto;
+}
+#container{
+    min-width: 412px;// créé un fond dégradé en CSS
+    background: var(--degrad1);
+    background: -moz-linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
+    background: -webkit-linear-gradient(45deg,var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
+    background: linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
+}
+
+
+#mainHeader{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    & #mainNav{
+        display: flex;
+        justify-content: flex-end;
+        gap: 20px;
+
+        & li{
+            display: inline-block;
+        }
+
+        & a{
+            color: var(--or);
+            padding-left: 30px;
+            text-decoration: none;
+            font-size: 2em;
+        }
+        & a:hover{
+            color: var(--white);
+            text-shadow: 3px 3px 2px var(--black);
+        }
+    }
+}
+
+#imgPortrait img{
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px var(--black);
+}
+
+#pdp {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+}
+
+// Ici commence la version responsive
+@media all and (max-width: 500px) {
+    #mainNav {
+        position: relative;
+        right: -1000px;
+    }
+    #mainHeader {
+        height: 50px;
+        & img{
+            position: absolute;
+            z-index: 1;
+            width: 212px;
+            height: auto;
+        }
+    }
+    #pageBarre {
+        display: flex;
+        justify-content: center;
+    }
+    #imgPortrait img {
+        width: 100%;
+    }
+}
