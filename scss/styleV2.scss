@@ -29,15 +29,15 @@ body {
     font-family: "Zen Kaku Gothic Antique", sans-serif, Verdana, sans-serif;
     margin: auto;
 }
-#container{
-    min-width: 412px;// créé un fond dégradé en CSS
+
+#container {
+    min-height: 100vh;
+    //créé un fond dégradé
     background: var(--degrad1);
     background: -moz-linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
     background: -webkit-linear-gradient(45deg,var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
     background: linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
 }
-
-
 #mainHeader{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -64,19 +64,32 @@ body {
     }
 }
 
-#imgPortrait img{
-    border-radius: 20px;
-    box-shadow: 4px 4px 5px var(--black);
+#imgPortrait {
+    & img{
+        border-radius: 20px;
+        box-shadow: 4px 4px 5px var(--black);
+        width: 300px;
+        height: auto;
+    }
+    & h1{
+        font-size: 1rem;
+        color: var(--white);
+    }
 }
 
 #pdp {
     display: flex;
-    position: absolute;
     justify-content: center;
+    color: var(--white);
+    font-family: "Zen dots", monospace, Verdana, sans-serif;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
 // Ici commence la version responsive
 @media all and (max-width: 500px) {
+
     #mainNav {
         position: relative;
         right: -1000px;

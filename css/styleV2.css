@@ -28,7 +28,7 @@ body {
 }
 
 #container {
-  min-width: 412px;
+  min-height: 100vh;
   background: var(--degrad1);
   background: linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
 }
@@ -60,12 +60,22 @@ body {
 #imgPortrait img {
   border-radius: 20px;
   box-shadow: 4px 4px 5px var(--black);
+  width: 300px;
+  height: auto;
+}
+#imgPortrait h1 {
+  font-size: 1rem;
+  color: var(--white);
 }
 
 #pdp {
   display: flex;
-  position: absolute;
   justify-content: center;
+  color: var(--white);
+  font-family: "Zen dots", monospace, Verdana, sans-serif;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
 }
 
 @media all and (max-width: 500px) {
