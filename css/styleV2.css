@@ -44,6 +44,7 @@ p {
   color: var(--grise);
   text-align: justify;
   margin: 10px 15px;
+  font-size: 0.7em;
 }
 
 body {
