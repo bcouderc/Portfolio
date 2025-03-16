@@ -3,15 +3,21 @@
   --black: #333;
   --blackGreen: #133133;
   --darkBlue:#19354d;
-  --or: #EBB42C;
+  --or: rgb(235, 180, 44);
   --shadowW: rgba(255, 255, 255, 0.15);
   --white: #FFF;
   --grise:#bbbbbb;
-  --cssColor:#7800af;
-  --html:#a80000;
   --fond: #404040;
   --degrad1:#202020;
   --degrad2:#6D6D6D;
+  --colorTest1: #53898D;
+  --colorTest2: #2F6265;
+  --colorTest3: #133234;
+  --colorTest4: #164C50;
+  --colorTest5: #0D3C3F;
+  --colorTest6: #341513;
+  --colorTest7: #562724;
+  --colorTest8: #341322;
   box-sizing: border-box;
 }
 
@@ -19,9 +25,29 @@
   box-sizing: inherit;
 }
 
+html, body {
+  height: 100%;
+}
+
+h1, h2 {
+  font-size: 1rem;
+  margin: 10px 15px;
+  color: var(--white);
+}
+
+h3 {
+  font-size: 0.8rem;
+  color: var(--grise);
+}
+
+p {
+  color: var(--grise);
+  text-align: justify;
+  margin: 10px 15px;
+}
+
 body {
   margin: 20px auto;
-  max-width: 1800px;
   font-size: 1rem;
   font-family: "Zen Kaku Gothic Antique", sans-serif, Verdana, sans-serif;
   margin: auto;
@@ -29,6 +55,7 @@ body {
 
 #container {
   min-height: 100vh;
+  height: 100%;
   background: var(--degrad1);
   background: linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
 }
@@ -63,9 +90,20 @@ body {
   width: 300px;
   height: auto;
 }
-#imgPortrait h1 {
-  font-size: 1rem;
-  color: var(--white);
+
+#imgRsxSociaux {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 30px;
+}
+#imgRsxSociaux img {
+  border-radius: 10px;
+  box-shadow: 4px 4px 5px var(--black);
+  width: 40px;
+  height: auto;
 }
 
 #pdp {
@@ -73,15 +111,16 @@ body {
   justify-content: center;
   color: var(--white);
   font-family: "Zen dots", monospace, Verdana, sans-serif;
+  font-size: 0.5rem;
   position: fixed;
   width: 100%;
   bottom: 0;
 }
 
-@media all and (max-width: 500px) {
+@media all and (min-width: 300px) {
   #mainNav {
-    position: relative;
-    right: -1000px;
+    visibility: hidden;
+    opacity: 0;
   }
   #mainHeader {
     height: 50px;
@@ -89,14 +128,19 @@ body {
   #mainHeader img {
     position: absolute;
     z-index: 1;
-    width: 212px;
+    width: 200px;
     height: auto;
   }
   #pageBarre {
     display: flex;
     justify-content: center;
+    text-align: center;
+    margin-top: 3vh;
+  }
+  #pageBarre > h1, #pageBarre h2 {
+    margin: auto;
   }
   #imgPortrait img {
-    width: 100%;
+    width: 20vh;
   }
 }/*# sourceMappingURL=styleV2.css.map */
