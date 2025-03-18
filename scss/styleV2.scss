@@ -60,15 +60,17 @@ body {
     height: 100%;
     //créé un fond dégradé
     background: var(--degrad1);
-    background: -moz-linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
+    background: -moz-linear-gradient(45deg, var(--degrad1) 0%, var (--degrad2) 62%, var(--degrad1) 100%);
     background: -webkit-linear-gradient(45deg,var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
     background: linear-gradient(45deg, var(--degrad1) 0%, var(--degrad2) 62%, var(--degrad1) 100%);
     //background-color: var(--degrad1);
 }
+
 #mainHeader{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
+
     & #mainNav{
         display: flex;
         justify-content: flex-end;
@@ -84,6 +86,7 @@ body {
             text-decoration: none;
             font-size: 2em;
         }
+
         & a:hover{
             color: var(--white);
             text-shadow: 3px 3px 2px var(--black);
@@ -106,6 +109,7 @@ body {
     position: fixed;
     width: 100%;
     bottom: 30px;
+
     & img {
         border-radius: 10px;
         box-shadow: 4px 4px 5px var(--black);
@@ -114,6 +118,7 @@ body {
     }
 }
 
+// Code du Footer
 #pdp {
     display: flex;
     justify-content: center;
@@ -128,17 +133,80 @@ body {
 // Ici commence la version responsive
 @media all and (min-width: 300px) {
 
+    // ici commence le code pour le menu burger
+    .menuBurgerNav{
+        height: 100%;
+        width: 300px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 300px;
+        background-color: var(--degrad1);
+        padding-top: 60px;
+        transition: right 0.3s ease;
+
+        & a {
+            padding: 32px 8px 8px 8px;
+            text-decoration: none;
+            font-size: 25px;
+            color: var(--white);
+            display: block;
+            transition: 0.8s;
+            &:hover{
+                color: var(--or);
+            }
+        }
+        & ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        // active class
+        &.active {
+            right: 0;
+        }
+        // close
+        & .close {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            color: var(--white);
+            cursor: pointer;
+        }
+    }
+    .burgerIcon {
+        display: block;
+        width: 35px;
+        height: 5px;
+        background-color: var(--white);
+        margin: 6px 0;
+    }
+
     #mainNav {
         visibility: hidden;
         opacity: 0;
     }
     #mainHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
         height: 50px;
+        padding: 0 20px;
+
         & img{
             position: absolute;
             z-index: 1;
             width: 200px;
             height: auto;
+        }
+        .burger {
+            display: flex;
+            position: absolute;
+            right: 20px; // Aligné à droite
+            top: 50%;
+            transform: translateY(-50%);
         }
     }
     #pageBarre {
